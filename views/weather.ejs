@@ -1,0 +1,22 @@
+<%- include('header'); -%>
+
+    <div class="content">
+        <form action="/" method="post">
+            <input type="text" name="location" id="" placeholder="Enter City Name" autocomplete="off">
+            <button value="submit">Check</button>
+
+        </form>
+        <h1>
+            <%= theTemp %>°C <%= theHaze %>
+        </h1>
+        <h2>
+            <%= currentCity %>
+        </h2>
+        <p><img src=<%=imageUrl %> alt=""></p>
+    </div>
+
+    <div class="bgImg">
+
+    </div>
+
+    <%- include('footer'); -%>

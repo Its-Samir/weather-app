@@ -1,0 +1,16 @@
+<%- include('header'); -%>
+
+    <div class="content">
+        <form action="/" method="post">
+            <input type="text" name="location" id="" placeholder="Enter City Name" autocomplete="off">
+            <button value="submit">Check</button>
+        </form>
+        <h2>
+            <%= errorMessage %> with the name "<%= currentCity %>" enter correct city name.
+        </h2>
+
+    <div class="bgImg">
+
+    </div>
+
+    <%- include('footer'); -%>

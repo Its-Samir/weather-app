@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather";
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('../images/LighthouseWallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.content {
+    box-shadow: inset 0px -20px 100px 5px #ffffff;
+    height: auto;
+    width: 55%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+}
+/* 
+.bgImg {
+    background-image: url(../images/Fall\ is\ coming-bro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    width: 25rem;
+    margin: -2.0rem auto;
+} */
+
+.creditContent,
+.homeContent {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.content h1,
+.creditContent h2 {
+    color: rgb(31 240 149);
+    margin-bottom: .7rem;
+    font-family: monospace;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    position: relative;
+    z-index: 4;
+    justify-content: space-around;
+}
+
+nav h2 {
+    color: rgb(31 240 149);
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(138, 229, 189);
+}
+
+ul li a:hover {
+    color: rgb(31 240 149);
+}
+
+#menu {
+    height: 25px;
+    width: 25px;
+    text-align: left;
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px auto;
+}
+
+img {
+    width: 65px;
+    user-select: none;
+}
+
+input {
+    width: 15rem;
+    color: #fff;
+    padding: 8px 15px;
+    text-align: center;
+    border-radius: 20px;
+    margin: .5rem 0;
+    background: transparent;
+    border: 2px solid blueviolet;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #ffffff;
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+    margin: 0 0 0 -2.5rem;
+    background-color: rgb(1, 230, 130);
+    border-radius: 20px;
+    width: 6rem;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid rgb(1, 230, 130);
+    transition: .5s;
+}
+
+button:hover {
+    background-color: rgba(1, 230, 131, 0.841);
+}
+
+button:focus {
+    outline: none;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31 240 149);
+}
+
+
+
+@media (max-width: 1080px) {
+
+    #menu {
+        display: block;
+    }
+
+    ul {
+        background-color: #000000;
+        position: absolute;
+        z-index: -1;
+        transform: translateY(-125px);
+        width: 100vw;
+        transition: .5s;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    .toggleUl {
+        transform: translateY(120px);
+    }
+
+    .toggleLi {
+        display: block;
+    }
+}
+
+@media (max-width: 426px) {
+
+    nav {
+        height: 3rem;
+    }
+
+    nav h2 {
+        font-size: 1rem;
+    }
+
+    #menu {
+        height: 18px;
+        width: 18px;
+    }
+
+    .line {
+        width: 18px;
+        height: 2.5px;
+        margin: 3px auto;
+    }
+
+    .content {
+        margin: 2rem auto;
+    }
+
+    .content {
+        width: 70%;
+    }
+    
+    input {
+        width: 10rem;
+        padding: 6px 15px;
+        font-size: .7rem;
+    }
+
+    button {
+        padding: 6px;
+        font-size: .7rem;
+        margin: 0 0 0 -1.5rem;
+        width: 4rem;
+    }
+
+    .bgImg {
+        height: 20rem;
+        width: 20rem;
+        background-size: cover;
+        margin: -2rem auto;
+    }
+
+    .content h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .content {
+        width: 90%;
+    }
+    
+    .content h1 {
+        font-size: 1rem;
+    }
+}
